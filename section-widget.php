@@ -9,10 +9,10 @@ Version: 3.3.0
 Author URI: http://www.chancancode.com/
 */
 
-include_once('olt-checklist/loader.php');
-enqueue_olt_checklist_loader(plugins_url('section-widget/olt-checklist'));
+include_once( plugin_dir_path( __FILE__ ) . 'olt-checklist/loader.php' );
+enqueue_olt_checklist_loader( plugins_url('section-widget/olt-checklist') );
 
-include_once('section-widget-tabbed.php');
+include_once( plugin_dir_path( __FILE__ ) . 'section-widget-tabbed.php' );
 
 add_action('init', 'section_widget_text_init');
 /**
